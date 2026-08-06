@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '20'
           cache: npm
 
       - name: Install dependencies
@@ -36,6 +36,11 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      # Ensure a static export is produced for GitHub Pages. Add an `export` script
+      # to package.json that runs `next export` if you don't already have one.
+      - name: Export (generate ./out)
+        run: npm run export
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
