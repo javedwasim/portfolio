@@ -109,6 +109,50 @@ export function Projects() {
               </ul>
             </div>
           </div>
+
+          {/* Project 5 */}
+          <div className="flex flex-col rounded-lg border border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-2xl font-bold">Core PHP Web Application</h3>
+            <p className="mt-2 font-mono text-sm text-blue-400">
+              Core PHP · MySQL · API Integration
+            </p>
+            <p className="mt-4 text-slate-400">
+              Developed custom web applications using Core PHP, implementing
+              dynamic modules and business logic.
+            </p>
+            <div className="mt-6">
+              <h4 className="font-semibold">Key Highlights</h4>
+              <ul className="mt-2 list-disc space-y-2 pl-5 text-slate-400">
+                <li>MySQL database design, queries, and optimization</li>
+                <li>Third-party API integrations and automation</li>
+                <li>Custom admin panels and application maintenance</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Project 6 */}
+          <div className="flex flex-col rounded-lg border border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-2xl font-bold">CodeIgniter Web Application</h3>
+            <p className="mt-2 font-mono text-sm text-blue-400">
+              CodeIgniter · PHP · MySQL · REST APIs
+            </p>
+            <p className="mt-4 text-slate-400">
+              Developed web applications using the CodeIgniter MVC framework,
+              including custom modules, business workflow implementation, and
+              RESTful API development.
+            </p>
+            <div className="mt-6">
+              <h4 className="font-semibold">Key Highlights</h4>
+              <ul className="mt-2 list-disc space-y-2 pl-5 text-slate-400">
+                <li>RESTful API development and third-party integrations</li>
+                <li>MySQL database optimization and performance improvements</li>
+                <li>
+                  Application maintenance, troubleshooting, and feature
+                  enhancements
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
