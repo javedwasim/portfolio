@@ -8,7 +8,7 @@ export function Projects() {
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
           Featured Projects
         </h2>
-        <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Project 1 */}
           <div className="flex flex-col rounded-lg border border-slate-800 bg-slate-900 p-6">
             <h3 className="text-2xl font-bold">Multi-Tenant SaaS Platform</h3>
