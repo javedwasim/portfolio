@@ -1,7 +1,7 @@
 export function Skills() {
   return (
     <section id="skills" className="w-full bg-slate-950 py-12 text-white md:py-24 lg:py-20">
-      <div className="container px-4 md:px-6">
+      <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Skills</h2>
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div>

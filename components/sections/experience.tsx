@@ -1,11 +1,11 @@
 export function Experience() {
   return (
     <section id="experience" className="w-full py-12 md:py-24 lg:py-10">
-      <div className="container px-4 md:px-6">
+      <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
           Work Experience
         </h2>
-        <div className="mt-10 max-w-4xl">
+        <div className="mt-10">
           <div className="mb-8">
             <h3 className="text-2xl font-bold">
               Senior Software Engineer & Team Lead

@@ -3,7 +3,7 @@ export function About() {
     <section id="about" className="w-full py-12 md:py-24 lg:py-10">
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Me</h2>
-        <div className="mt-6 max-w-4xl space-y-6 text-lg text-slate-400">
+        <div className="mt-6 space-y-6 text-lg text-slate-400">
           <p>
             I’m a <strong>Senior Software Engineer and Team Lead</strong> with 10+
             years of experience building scalable, reliable, and business-focused
