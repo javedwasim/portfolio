@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import myAvatar from "@/public/img/myavatar.jpeg";
 
 export default function Hero() {
   const summary = `
@@ -16,7 +17,7 @@ performance and user experience.
   return (
     <section className="bg-slate-950 text-white">
       <div className="mx-auto flex min-h-[90vh] max-w-7xl items-center px-6 py-20 lg:px-12">
-        <div className="grid items-center gap-16 lg:grid-cols-2">
+        <div className="grid items-center  lg:grid-cols-2">
           {/* Left Content */}
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-blue-400">
@@ -60,12 +61,11 @@ performance and user experience.
           <div className="flex justify-center lg:justify-end">
             <div className="overflow-hidden rounded-full border-4 border-slate-800 shadow-2xl">
               <Image
-                src="/profile.jpg"
+                src={myAvatar}
                 alt="Javed Wasim"
-                width={420}
-                height={420}
                 priority
-                className="h-[320px] w-[320px] object-cover lg:h-[420px] lg:w-[420px]"
+                placeholder="blur"
+                className="h-[420px] w-[420px] object-cover lg:h-[420px] lg:w-[420px]"
               />
             </div>
           </div>
