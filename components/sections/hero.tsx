@@ -41,12 +41,13 @@ performance and user experience.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="/resume.pdf"
+              <a
+                href="/portfolio/javed_wasim.pdf"
+                download="Javed-Wasim-Resume.pdf"
                 className="rounded-xl bg-blue-600 px-7 py-3 font-medium text-white transition hover:bg-blue-700"
               >
                 Download Resume
-              </Link>
+              </a>
 
               <Link
                 href="#projects"
