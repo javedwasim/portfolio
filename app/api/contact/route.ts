@@ -9,7 +9,6 @@ export async function POST(request: Request) {
 
     const { name, email, subject, message } = body;
 
-    // Validate required fields
     if (!name || !email || !subject || !message) {
       return NextResponse.json(
         { error: "All fields are required." },
@@ -17,7 +16,6 @@ export async function POST(request: Request) {
       );
     }
 
-    // Send email
     const { error } = await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>",
       to: process.env.CONTACT_EMAIL!,
