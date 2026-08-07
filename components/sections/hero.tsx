@@ -1,40 +1,76 @@
-import Image from 'next/image'
-import { Button } from '@/components/sections/button'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
-export function Hero() {
+export default function Hero() {
+  const summary = `
+I am a Senior Software Engineer with over 10 years of experience
+designing and developing scalable SaaS platforms, enterprise web
+applications, and high-performance backend systems. My expertise
+includes PHP, Laravel, Python, AI-powered applications, RESTful APIs,
+MySQL, workflow automation, and multi-tenant architectures. I am
+passionate about building secure, maintainable, and scalable software
+that solves real business problems while delivering exceptional
+performance and user experience.
+`;
+
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-      <div className="container px-4 md:px-6">
-        <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-          <div className="flex flex-col justify-center space-y-4">
-            <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                Building Scalable Backend Systems & AI-Powered Applications
-              </h1>
-              <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                Senior Software Engineer with 10+ years of experience designing scalable SaaS platforms, APIs, workflow
-                automation systems, and modern AI-powered applications.
-              </p>
-            </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Link href="#projects">
-                <Button size="lg">View Projects</Button>
-              </Link>
-              <Button size="lg" variant="outline">
+    <section className="bg-slate-950 text-white">
+      <div className="mx-auto flex min-h-[90vh] max-w-7xl items-center px-6 py-20 lg:px-12">
+        <div className="grid items-center gap-16 lg:grid-cols-2">
+          {/* Left Content */}
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-blue-400">
+              Hello, I'm
+            </p>
+
+            <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
+              Javed Wasim
+            </h1>
+
+            <h2 className="mt-5 text-2xl font-semibold text-slate-300">
+              Senior Software Engineer | Team Lead
+            </h2>
+
+            <p className="mt-2 text-lg text-blue-400">
+              Backend Engineering • AI Development • Laravel • Python
+            </p>
+
+            <p className="mt-8 max-w-4xl text-lg leading-8 text-slate-400">
+              {summary}
+            </p>
+
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Link
+                href="/resume.pdf"
+                className="rounded-xl bg-blue-600 px-7 py-3 font-medium text-white transition hover:bg-blue-700"
+              >
                 Download Resume
-              </Button>
+              </Link>
+
+              <Link
+                href="#projects"
+                className="rounded-xl border border-slate-700 px-7 py-3 font-medium text-slate-200 transition hover:border-blue-500 hover:text-white"
+              >
+                View Projects
+              </Link>
             </div>
           </div>
-          <Image
-            src="https://placehold.co/600x600/000000/FFFFFF/png"
-            width="600"
-            height="600"
-            alt="Javed Wasim"
-            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
-          />
+
+          {/* Right Image */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="overflow-hidden rounded-full border-4 border-slate-800 shadow-2xl">
+              <Image
+                src="/profile.jpg"
+                alt="Javed Wasim"
+                width={420}
+                height={420}
+                priority
+                className="h-[320px] w-[320px] object-cover lg:h-[420px] lg:w-[420px]"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
